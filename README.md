@@ -69,3 +69,13 @@ Deleted At - datetime
   * [ ] Update
   * [ ] Delete
 * [ ] Pagination
+
+User created: { password: 'f3205a25f02184c116296b1734fe31' } {
+  id: 1,
+  email: 'cj@null.computer',
+  name: 'CJ',
+  password: '$2b$12$HEX7eU1Y2cdyzh81Ayqpl.CjwhPq0xRxnGmXzuNozG7yyLQ7wtHz.',
+  last_login: null,
+  created_at: 2020-12-24T20:11:20.272Z,
+  updated_at: 2020-12-24T20:11:20.272Z,
+  deleted_at: null

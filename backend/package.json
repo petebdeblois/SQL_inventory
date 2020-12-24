@@ -6,17 +6,19 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "DEBUG=inventory-app nodemon src/index.js",
-    "migrate": "DEBUG=inventory-app knex migrate:latest",
-    "rollback": "DEBUG=inventory-app knex migrate:rollback",
-    "seed": "DEBUG=inventory-app knex seed:run",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
     "test": "DEBUG=inventory-app jest",
     "lint": "eslint db src"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "knex": "^0.21.14",
+    "papaparse": "^5.3.0",
     "pg": "^8.5.1"
   },
   "devDependencies": {
