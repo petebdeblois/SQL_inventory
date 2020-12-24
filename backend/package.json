@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "DEBUG=inventory-app nodemon src/index.js",
+    "migrate": "DEBUG=inventory-app knex migrate:latest",
+    "rollback": "DEBUG=inventory-app knex migrate:rollback",
+    "seed": "DEBUG=inventory-app knex seed:run",
+    "test": "DEBUG=inventory-app jest",
+    "lint": "eslint db src"
   },
   "author": "",
   "license": "ISC",
