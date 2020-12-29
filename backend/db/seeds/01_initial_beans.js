@@ -49,13 +49,25 @@ exports.seed = async (knex) => {
       name: 'Kitchen Pantry',
     },
     {
+      name: 'Kitchen Freezer',
+    },
+    {
+      name: 'Kitchen Fridge',
+    },
+    {
       name: 'Basement Pantry',
     },
     {
       name: 'Basement Freezer',
     },
     {
-      name: 'Kitchen Fridge',
+      name: 'Office',
+    },
+    {
+      name: 'Bedroom',
+    },
+    {
+      name: 'Living Room',
     },
   ]);
 };
