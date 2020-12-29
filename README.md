@@ -12,6 +12,32 @@ Created At - datetime
 Updated At - datetime
 Deleted At - datetime
 
+## What Libraries will be Needed
+
+### dependencies
+ - bcrypt
+ - compression
+ - dotenv
+ - express
+ - helmet
+ - jsonwebtoken
+ - knex
+ - morgan
+ - objection
+ - papaparse
+ - pg
+ - yup
+### Dev dependencies
+
+ - eslint
+ - eslint-config-airbnb-base
+ - eslint-config-prettier
+ - eslint-plugin-import
+ - eslint-plugin-prettier
+ - prettier 
+ - nodemon -> Will be used to keep the app active
+ - supertest -> Pass in an express app, define endpoint and test. Define expectation
+ - jest      -> It is a Test Runner. Needed to run the test
 
 ### Created the docker 
 `docker-compose up`
@@ -98,3 +124,5 @@ User created: { password: 'f3205a25f02184c116296b1734fe31' } {
   created_at: 2020-12-24T20:11:20.272Z,
   updated_at: 2020-12-24T20:11:20.272Z,
   deleted_at: null
+
+![GitHub](https://img.shields.io/github/license/petebdeblois/SQL_inventory?style=plastic)
