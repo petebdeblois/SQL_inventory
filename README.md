@@ -21,22 +21,28 @@ Deleted At - datetime
 `npx knex migrate:make initial`
 `npx knex migrate:latest` Look in the migration folder and run the files that hasnt been run
 
+### Rollback the latest changes 
+`knex migrate:rollback`
+
+### Needed for the REST API
+
+
 
 
 ## Entities in an Home Inventory System
 
-* [ ] User
-* [ ] Item
-* [ ] Item Type
-* [ ] Manufacturer
-* [ ] Item Location
+* [x] User
+* [x] Item
+* [x] Item Type
+* [x] Manufacturer
+* [x] Item Location
 * [ ] Item Purchase Location
 * [ ] Comment
 * [ ] Warranty
 
 ## Seed the Database
 
-* [ ] User
+* [x] User
 * [ ] Countries - Partial, more to do!
 * [ ] US States - Partial, more to do!
 * [ ] Item Types
@@ -45,29 +51,42 @@ Deleted At - datetime
 ## API Endpoints
 
 * [ ] Addresses
-  * [ ] Create
-  * [ ] List
+  * [x] Create
+  * [x] List
   * [ ] Get One
   * [ ] Update
   * [ ] Delete
 * [ ] Companies
-  * [ ] List
+  * [x] List
   * [ ] Get One
   * [ ] Create
   * [ ] Update
   * [ ] Delete
 * [ ] Items
-  * [ ] List
-  * [ ] Create
+  * [x] List
+  * [x] Create
   * [ ] Get One
   * [ ] Update
   * [ ] Delete
 * [ ] Item Info
-  * [ ] List
+  * [x] List
+  * [x] Create
+  * [ ] Get One
+  * [x] Update
+  * [ ] Delete
+* [ ] States
+  * [x] List
+  * [x] Create
+  * [x] Get One
+  * [ ] Update
+  * [ ] Delete
+* [ ] Users
+  * [x] List
   * [ ] Create
   * [ ] Get One
   * [ ] Update
   * [ ] Delete
+
 * [ ] Pagination
 
 User created: { password: 'f3205a25f02184c116296b1734fe31' } {

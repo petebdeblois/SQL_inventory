@@ -8,8 +8,11 @@ const errorMessages = {
 };
 
 function notFound(req, res, next) {
+  // creates the error
   const error = new Error(`Not found - ${req.originalUrl}`);
+  // set the status code
   res.status(404);
+  // goes to the next middleware
   next(error);
 }
 

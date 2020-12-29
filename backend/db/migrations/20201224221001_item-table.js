@@ -3,7 +3,7 @@ const {
   url,
   references,
 } = require('../../src/lib/tableUtils');
-const tableNames = require('../../src/constants/tablesNames');
+const tableNames = require('../../src/constants/tableNames');
 
 /**
  * @param {import('knex')} knex

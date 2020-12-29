@@ -9,7 +9,7 @@ const project = require('./constants/project');
 
 const app = express();
 
-app.use(morgan('tiny'));
+app.use(morgan('combined'));
 app.use(compression());
 app.use(helmet());
 app.use(express.json());
@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 app.use('/api/v1', api);
 
 app.use(middlewares.notFound);
+// we always want the last to be errorHandle
 app.use(middlewares.errorHandler);
 
 module.exports = app;
