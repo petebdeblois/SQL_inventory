@@ -126,3 +126,4 @@ User created: { password: 'f3205a25f02184c116296b1734fe31' } {
   deleted_at: null
 
 ![GitHub](https://img.shields.io/github/license/petebdeblois/SQL_inventory?style=plastic)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/petebdeblois/SQL_inventory/main)
