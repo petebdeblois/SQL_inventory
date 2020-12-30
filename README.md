@@ -53,6 +53,8 @@ Deleted At - datetime
 ### Needed for the REST API
 
 
+### Bump the version 
+`npm version patch -m "Upgrade to %s for reasons"
 
 
 ## Entities in an Home Inventory System
@@ -115,15 +117,17 @@ Deleted At - datetime
 
 * [ ] Pagination
 
-User created: { password: 'f3205a25f02184c116296b1734fe31' } {
+Using environment: development
+User created: { password: '4c9b6dea1c95c30337d6b3abac8918' } {
   id: 1,
   email: 'cj@null.computer',
   name: 'CJ',
-  password: '$2b$12$HEX7eU1Y2cdyzh81Ayqpl.CjwhPq0xRxnGmXzuNozG7yyLQ7wtHz.',
+  password: '$2b$12$h7tARqANYPa58MYx8vqhWehfxiFuyp0mZ36T5Eff4HgmayMxhG7fu',
   last_login: null,
-  created_at: 2020-12-24T20:11:20.272Z,
-  updated_at: 2020-12-24T20:11:20.272Z,
+  created_at: 2020-12-29T23:59:30.029Z,
+  updated_at: 2020-12-29T23:59:30.029Z,
   deleted_at: null
+}
 
 ![GitHub](https://img.shields.io/github/license/petebdeblois/SQL_inventory?style=plastic)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/petebdeblois/SQL_inventory_backend)
