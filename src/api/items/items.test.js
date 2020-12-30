@@ -2,6 +2,11 @@ const supertest = require('supertest');
 
 const app = require('../../app');
 
+
+const connection = require('../../db');
+
+afterAll(() => connection.destroy());
+
 describe('GET /api/v1/items', () => {
   it('should respond with an array of items', async () => {
     const response = await supertest(app)
