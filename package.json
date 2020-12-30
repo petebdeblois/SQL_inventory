@@ -9,7 +9,7 @@
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
-    "test": "DEBUG=inventory-app jest",
+    "test": "jest",
     "lint": "eslint db src"
   },
   "author": "Pete Via CJ form Coding Garden",
