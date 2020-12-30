@@ -130,4 +130,5 @@ User created: { password: '4c9b6dea1c95c30337d6b3abac8918' } {
 }
 
 ![GitHub](https://img.shields.io/github/license/petebdeblois/SQL_inventory?style=plastic)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/petebdeblois/SQL_inventory/main)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/petebdeblois/SQL_inventory_backend)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/petebdeblois/SQL_inventory_backend)
