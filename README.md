@@ -41,6 +41,15 @@ Deleted At - datetime
 
 ### Created the docker 
 `docker-compose up`
+### Connect to the containe
+`docker ps`
+`docker exec -t -i backend_db_1 bash`
+
+`createdb inventory_app_test`
+
+`psql -Uadmin -padmin`
+`psql -Uadmin inventory_app`
+`CREATE DATABASE inventory_app_test`
 
 ### create the first DB
 
