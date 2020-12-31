@@ -11,9 +11,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res, next) => {
   // this is grabbing the id from the params. api/v1/states/ID
-  const {
-    id
-  } = req.params;
+  const { id } = req.params;
   try {
     // TODO: should we validate the ID?
     const state = await queries.get(parseInt(id, 10) || 0);
