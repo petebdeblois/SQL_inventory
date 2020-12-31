@@ -14,12 +14,14 @@ app.use(compression());
 app.use(helmet());
 app.use(express.json());
 
+// localhost:5050/
 app.get('/', (req, res) => {
   res.json({
     message: project.message,
   });
 });
-
+// this add api/v1 to localhost:5050/
+// it uses the router.use in api/index.js
 app.use('/api/v1', api);
 
 app.use(middlewares.notFound);

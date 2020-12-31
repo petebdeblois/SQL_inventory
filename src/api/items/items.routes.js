@@ -31,6 +31,8 @@ router.get('/:id', async (req, res, next) => {
     next(error);
   }
 });
+// DOCS https://vincit.github.io/objection.js/guide/query-examples.html#insert-queries
+// DOCS https://vincit.github.io/objection.js/guide/validation.html#validation
 
 router.post('/', async (req, res, next) => {
   try {

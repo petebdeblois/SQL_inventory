@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
     message: project.message,
   });
 });
-
+// DOCS http://expressjs.com/en/guide/routing.html
 router.use('/states', states);
 router.use('/users', users);
 router.use('/auth', auth);

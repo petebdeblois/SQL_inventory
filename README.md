@@ -39,8 +39,9 @@ Deleted At - datetime
  - supertest -> Pass in an express app, define endpoint and test. Define expectation
  - jest      -> It is a Test Runner. Needed to run the test
 
-### Created the docker 
+### Create the docker 
 `docker-compose up`
+
 ### Connect to the containe
 `docker ps`
 `docker exec -t -i backend_db_1 bash`
@@ -65,78 +66,6 @@ Deleted At - datetime
 ### Bump the version 
 `npm version patch -m "Upgrade to %s for reasons"
 
-
-## Entities in an Home Inventory System
-
-* [x] User
-* [x] Item
-* [x] Item Type
-* [x] Manufacturer
-* [x] Item Location
-* [ ] Item Purchase Location
-* [ ] Comment
-* [ ] Warranty
-
-## Seed the Database
-
-* [x] User
-* [ ] Countries - Partial, more to do!
-* [ ] US States - Partial, more to do!
-* [ ] Item Types
-* [ ] Location
-
-## API Endpoints
-
-* [ ] Addresses
-  * [x] Create
-  * [x] List
-  * [ ] Get One
-  * [ ] Update
-  * [ ] Delete
-* [ ] Companies
-  * [x] List
-  * [ ] Get One
-  * [ ] Create
-  * [ ] Update
-  * [ ] Delete
-* [ ] Items
-  * [x] List
-  * [x] Create
-  * [ ] Get One
-  * [ ] Update
-  * [ ] Delete
-* [ ] Item Info
-  * [x] List
-  * [x] Create
-  * [ ] Get One
-  * [x] Update
-  * [ ] Delete
-* [ ] States
-  * [x] List
-  * [x] Create
-  * [x] Get One
-  * [ ] Update
-  * [ ] Delete
-* [ ] Users
-  * [x] List
-  * [ ] Create
-  * [ ] Get One
-  * [ ] Update
-  * [ ] Delete
-
-* [ ] Pagination
-
-Using environment: development
-User created: { password: '4c9b6dea1c95c30337d6b3abac8918' } {
-  id: 1,
-  email: 'cj@null.computer',
-  name: 'CJ',
-  password: '$2b$12$h7tARqANYPa58MYx8vqhWehfxiFuyp0mZ36T5Eff4HgmayMxhG7fu',
-  last_login: null,
-  created_at: 2020-12-29T23:59:30.029Z,
-  updated_at: 2020-12-29T23:59:30.029Z,
-  deleted_at: null
-}
 
 ![GitHub](https://img.shields.io/github/license/petebdeblois/SQL_inventory?style=plastic)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/petebdeblois/SQL_inventory_backend)
