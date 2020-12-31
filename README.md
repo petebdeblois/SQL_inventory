@@ -66,6 +66,10 @@ Deleted At - datetime
 ### Bump the version 
 `npm version patch -m "Upgrade to %s for reasons"
 
+### RUn test
+First we init jest
+`npx jest init`
+`npm test` -> Script in package.json
 
 ![GitHub](https://img.shields.io/github/license/petebdeblois/SQL_inventory?style=plastic)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/petebdeblois/SQL_inventory_backend)
