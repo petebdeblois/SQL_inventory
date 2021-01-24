@@ -27,8 +27,8 @@ Deleted At - datetime
  - papaparse
  - pg
  - yup
-### Dev dependencies
 
+### Dev dependencies
  - eslint
  - eslint-config-airbnb-base
  - eslint-config-prettier
