@@ -45,3 +45,4 @@ exports.seed = async (knex) => {
 
   await knex(tableNames.state).insert(us_states);
 };
+
