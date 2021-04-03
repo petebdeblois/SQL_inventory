@@ -19,24 +19,24 @@
     "compression": "^1.7.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "helmet": "^4.1.0",
+    "helmet": "^4.3.1",
     "jsonwebtoken": "^8.5.1",
-    "knex": "^0.21.5",
+    "knex": "^0.21.15",
     "morgan": "^1.10.0",
-    "objection": "^2.2.3",
+    "objection": "^2.2.4",
     "papaparse": "^5.3.0",
-    "pg": "^8.3.3",
-    "yup": "^0.29.3"
+    "pg": "^8.5.1",
+    "yup": "^0.32.8"
   },
   "devDependencies": {
-    "eslint": "^7.7.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "jest": "^26.4.2",
-    "nodemon": "^2.0.4",
-    "prettier": "^2.1.1",
-    "supertest": "^4.0.2"
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1",
+    "supertest": "^6.0.1"
   }
 }
