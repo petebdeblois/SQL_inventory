@@ -18,7 +18,7 @@ describe('GET /api/v1/companies', () => {
 
   it('should respond with 1 company', async () => {
     const response = await supertest(app)
-      .get('api/v1/companies/1')
+      .get('/api/v1/companies/1')
       .expect('Content-Type', /json/)
       .expect(200)
     expect(response.body.id).toBe(1);

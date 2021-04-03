@@ -21,7 +21,7 @@ describe('GET /api/v1/addresses', () => {
       .expect('Content-Type', /json/)
       .expect(200);
 
-    expect(response.body).toBe(1);
+    expect(response.body.id).toBe(1);
   });
   
   it('should respond with a 404', async () => {
