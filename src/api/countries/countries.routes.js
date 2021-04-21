@@ -24,4 +24,8 @@ router.get('/:id', async (req, res, next) => {
   }
 });
 
+// POST
+// UPDATE
+// DELETE
+
 module.exports = router;

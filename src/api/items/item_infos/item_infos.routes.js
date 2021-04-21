@@ -13,6 +13,9 @@ router.get('/', async (req, res, next) => {
   }
 });
 
+
+// POST
+
 router.post('/', async (req, res, next) => {
   try {
     // TODO: set user id by logged in user
@@ -24,6 +27,7 @@ router.post('/', async (req, res, next) => {
   }
 });
 
+// UPDATE
 router.patch('/:id', async (req, res, next) => {
   try {
     const item = await ItemInfo.query().patchAndFetchById(
@@ -35,5 +39,7 @@ router.patch('/:id', async (req, res, next) => {
     next(error);
   }
 });
+
+// DELETE
 
 module.exports = router;

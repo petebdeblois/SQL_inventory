@@ -4,6 +4,7 @@ const Company = require('./companies.model');
 const queries = require('./companies.queries');
 const router = express.Router();
 
+// GET ALL
 router.get('/', async (req, res, next) => {
   try {
     const companies = await Company.query().where('deleted_at', null);
@@ -13,7 +14,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-
+// GET 1
 router.get('/:id', async (req, res, next) => {
   // this is grabbing the id from the params. api/v1/companies/ID
   const {
@@ -30,4 +31,8 @@ router.get('/:id', async (req, res, next) => {
     return next(error);
   }
 });
+
+// POST
+// UPDATE
+// DELETE
 module.exports = router;
