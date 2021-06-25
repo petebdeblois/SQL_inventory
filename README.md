@@ -42,7 +42,7 @@ Deleted At - datetime
 ### Create the docker 
 `docker-compose up`
 
-### Connect to the containe
+### Connect to the container
 `docker ps`
 `docker exec -t -i backend_db_1 bash`
 
