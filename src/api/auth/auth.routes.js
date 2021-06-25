@@ -22,6 +22,7 @@ const schema = yup.object().shape({
     .required(),
 });
 
+// TODO Put it in a separate file to handle error
 const errorMessages = {
   invalidLogin: 'Invalid login.',
   emailInUse: 'Email in use.',
