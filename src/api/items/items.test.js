@@ -16,4 +16,14 @@ describe('GET /api/v1/items', () => {
 
     expect(response.body).toBeInstanceOf(Array);
   });
+
+/*
+    it('should respond with a 404 for a not found state', async () => {
+      await supertest(app)
+        .get('/api/v1/items/999999')
+        .expect('Content-Type', /json/)
+        .expect(404);
+    });
+
+  */
 });

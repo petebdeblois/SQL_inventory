@@ -27,8 +27,8 @@ Deleted At - datetime
  - papaparse
  - pg
  - yup
-### Dev dependencies
 
+### Dev dependencies
  - eslint
  - eslint-config-airbnb-base
  - eslint-config-prettier
@@ -44,7 +44,7 @@ Deleted At - datetime
 
 ### Connect to the container
 `docker ps`
-`docker exec -t -i backend_db_1 bash`
+`docker exec -t -i sql_inventory_backend_db_1 bash`
 
 `createdb inventory_app_test`
 
@@ -60,6 +60,9 @@ Deleted At - datetime
 ### Rollback the latest changes 
 `knex migrate:rollback`
 
+### Seed the DB 
+`npx knex seed:run`
+
 ### Needed for the REST API
 
 
@@ -70,6 +73,26 @@ Deleted At - datetime
 First we init jest
 `npx jest init`
 `npm test` -> Script in package.json
+
+## Always run
+Use PM2, it's a production process manager for Node.js applications with a built-in load balancer.
+
+Install PM2
+`$ npm install pm2 -g`
+
+Start an application
+`$ pm2 start src/indes.js`
+
+If you using express then you can start your app like
+pm2 start ./bin/www --name="app"
+
+Listing all running processes:
+`$ pm2 list`
+It will list all process. You can then stop / restart your service by using ID or Name of the app with following command.
+
+`$ pm2 stop all`                  
+`$ pm2 stop 0`                    
+`$ pm2 restart all`               
 
 ![GitHub](https://img.shields.io/github/license/petebdeblois/SQL_inventory?style=plastic)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/petebdeblois/SQL_inventory_backend)

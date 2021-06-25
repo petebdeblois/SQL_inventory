@@ -2,6 +2,7 @@ const express = require('express');
 
 const project = require('../constants/project');
 const states = require('./states/states.routes');
+const countries = require('./countries/countries.routes');
 const users = require('./users/users.routes');
 const addresses = require('./addresses/addresses.routes');
 const companies = require('./companies/companies.routes');
@@ -22,5 +23,6 @@ router.use('/auth', auth);
 router.use('/addresses', addresses);
 router.use('/companies', companies);
 router.use('/items', items);
+router.use('/countries', countries);
 
 module.exports = router;
