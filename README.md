@@ -97,3 +97,9 @@ It will list all process. You can then stop / restart your service by using ID o
 ![GitHub](https://img.shields.io/github/license/petebdeblois/SQL_inventory?style=plastic)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/petebdeblois/SQL_inventory_backend)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/petebdeblois/SQL_inventory_backend)
+
+
+
+sudo docker exec -t -i inventory_db bash
+psql -Uadmin inventory_app
+ALTER USER admin WITH ENCRYPTED PASSWORD '';
