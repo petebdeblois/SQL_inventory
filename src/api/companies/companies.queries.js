@@ -6,7 +6,6 @@ const fields = ['id', 'name', 'website_url'];
 
 module.exports = {
   find() {
-
     return db(tableNames.company).select(fields);
   },
   async get(id) {

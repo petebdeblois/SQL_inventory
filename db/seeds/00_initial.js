@@ -5,6 +5,7 @@ const logger = require('../../src/lib/logger');
 const tableNames = require('../../src/constants/tableNames');
 const countries = require('../../src/constants/countries');
 const us_states = require('../../src/constants/us_states');
+const ca_provinces = require('../../src/constants/ca_provinces');
 
 /**
  * @param {import('knex')} knex
@@ -44,5 +45,12 @@ exports.seed = async (knex) => {
   });
 
   await knex(tableNames.state).insert(us_states);
-};
 
+  const ca = insertedCountries.find((country) => country.code === 'CA');
+
+  ca_provinces.forEach((province) => {
+    province.country_id = ca.id;
+  });
+
+  await knex(tableNames.province).insert(ca_provinces);
+};

@@ -12,7 +12,6 @@ router.get('/', async (req, res) => {
   res.json(users);
 });
 
-// TODO 
-
+// TODO
 
 module.exports = router;

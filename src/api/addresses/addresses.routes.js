@@ -2,6 +2,7 @@ const express = require('express');
 
 const Address = require('./addresses.model');
 const queries = require('./addresses.queries');
+
 const router = express.Router();
 
 // GET ALL
@@ -13,12 +14,10 @@ router.get('/', async (req, res, next) => {
     next(error);
   }
 });
-//GET 1 
+// GET 1
 router.get('/:id', async (req, res, next) => {
   // this is grabbing the id from the params. api/v1/addresses/ID
-  const {
-    id
-  } = req.params;
+  const { id } = req.params;
   try {
     const addresses = await queries.get(parseInt(id, 10) || 0);
     if (addresses) {

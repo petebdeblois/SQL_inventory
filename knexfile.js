@@ -5,6 +5,8 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
+      port:process.env.PORT,
+      host:'192.168.2.64',
       database: process.env.POSTGRES_DB,
       user: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
@@ -20,7 +22,9 @@ module.exports = {
     client: 'pg',
     connection: {
       // TODO: update postgres container to create test db on start
-      database: process.env.POSTGRES_TEST_DB,
+      port:process.env.PORT,
+      host:'192.168.2.64',
+      database: process.env.POSTGRES_DB,
       user: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
     },
@@ -34,6 +38,8 @@ module.exports = {
   production: {
     client: 'pg',
     connection: {
+      port:process.env.PORT,
+      host:'192.168.2.64',
       database: process.env.POSTGRES_DB,
       user: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,

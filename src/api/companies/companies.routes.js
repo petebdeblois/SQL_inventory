@@ -2,6 +2,7 @@ const express = require('express');
 
 const Company = require('./companies.model');
 const queries = require('./companies.queries');
+
 const router = express.Router();
 
 router.get('/', async (req, res, next) => {
@@ -13,12 +14,9 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-
 router.get('/:id', async (req, res, next) => {
   // this is grabbing the id from the params. api/v1/companies/ID
-  const {
-    id
-  } = req.params;
+  const { id } = req.params;
   try {
     // TODO: should we validate the ID?
     const company = await queries.get(parseInt(id, 10) || 0);

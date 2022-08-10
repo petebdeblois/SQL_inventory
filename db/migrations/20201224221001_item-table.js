@@ -13,6 +13,10 @@ exports.up = async (knex) => {
     table.string('code');
     references(table, tableNames.country);
   });
+  await knex.schema.table(tableNames.province, (table) => {
+    table.string('code');
+    references(table, tableNames.country);
+  });
 
   await knex.schema.table(tableNames.country, (table) => {
     table.string('code');
@@ -76,6 +80,10 @@ exports.up = async (knex) => {
  */
 exports.down = async (knex) => {
   await knex.schema.table(tableNames.state, (table) => {
+    table.dropColumn('code');
+    table.dropColumn('country_id');
+  });
+  await knex.schema.table(tableNames.province, (table) => {
     table.dropColumn('code');
     table.dropColumn('country_id');
   });

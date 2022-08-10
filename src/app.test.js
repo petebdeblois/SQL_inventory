@@ -11,7 +11,7 @@ describe('GET /', () => {
       // This expectations are builtin supertest
       .expect('Content-Type', /json/)
       .expect(200);
-// this expectations is form JEST
+    // this expectations is form JEST
     expect(response.body.message).toEqual(project.message);
   });
 });

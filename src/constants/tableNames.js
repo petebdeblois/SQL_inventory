@@ -2,6 +2,7 @@ module.exports = {
   user: 'user',
   item_type: 'item_type',
   state: 'state',
+  province: 'province',
   country: 'country',
   shape: 'shape',
   inventory_location: 'inventory_location',
