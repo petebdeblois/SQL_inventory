@@ -13,8 +13,8 @@ const ca_provinces = require('../../src/constants/ca_provinces');
 exports.seed = async (knex) => {
   await Promise.all(Object.keys(tableNames).map((name) => knex(name).del()));
 
-  const password = crypto.randomBytes(15).toString('hex');
 
+  const password = `A${crypto.randomBytes(15).toString('hex')}?`;
   const user = {
     email: 'cj@null.computer',
     name: 'CJ',

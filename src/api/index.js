@@ -1,6 +1,7 @@
 const express = require('express');
 
 const project = require('../constants/project');
+const authMiddlewares = require('./auth/auth.middlewares');
 const states = require('./states/states.routes');
 const provinces = require('./provinces/provinces.routes');
 const countries = require('./countries/countries.routes');
@@ -18,13 +19,14 @@ router.get('/', (req, res) => {
   });
 });
 // DOCS http://expressjs.com/en/guide/routing.html
-router.use('/states', states);
-router.use('/provinces', provinces);
-router.use('/users', users);
+router.use('/states', authMiddlewares.isLoggedIn, states);
+router.use('/users', authMiddlewares.isLoggedIn, users);
+router.use('/provinces', authMiddlewares.isLoggedIn, provinces);
+
 router.use('/auth', auth);
-router.use('/addresses', addresses);
-router.use('/companies', companies);
-router.use('/items', items);
+router.use('/addresses', authMiddlewares.isLoggedIn, addresses);
+router.use('/companies', authMiddlewares.isLoggedIn, companies);
+router.use('/items', authMiddlewares.isLoggedIn, items);
 router.use('/countries', countries);
 
 module.exports = router;

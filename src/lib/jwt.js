@@ -1,12 +1,23 @@
 const jwt = require('jsonwebtoken');
-// DOCS https://www.npmjs.com/package/jsonwebtoken
+
+function verify(token) {
+  return new Promise((resolve, reject) => {
+    jwt.verify(token, process.env.JWT_SECRET, (error, decoded) => {
+      if (error) return reject(error);
+      return resolve(decoded);
+    });
+  });
+}
+
 function sign(payload) {
   return new Promise((resolve, reject) => {
     jwt.sign(
       payload,
       process.env.JWT_SECRET,
       {
-        expiresIn: '1d', // expiresIn: expressed in seconds or a string describing a time span zeit/ms.
+        // lower expiration for privileged users...
+        // need refresh token...
+        expiresIn: '1m',
       },
       (error, token) => {
         if (error) return reject(error);
@@ -17,5 +28,6 @@ function sign(payload) {
 }
 
 module.exports = {
+  verify,
   sign,
 };
